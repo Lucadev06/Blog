@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi página web</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./utils.js"></script>
+  <script>
+    window.onload = getFightData;
+  </script>
+</head>
+
+<body style="margin: 0" class="ft-arial-20-bold">
+   <header class="header"> 
+    <div class="header-paginas">
+      <nav class="header-nav">
+        <ul class="header-menu">
+          <li class="header-menu-item"><a href="index.html">Home</a></li>
+          <li class="header-menu-item"><a href="tabla.html">Tabla</a></li>
+          <li class="header-menu-item"><a href="pregunta1.html">Questionario</a></li>
+          <li class="header-menu-item"><a href="playlist.html">Playlist</a></li>
+        </ul>
+      </nav>
+    </div>
+   </header>
+
+  <main>
+        <h2 class="titulo-tabla">Mis Peleas</h2>
+        <div class="contenedor-tabla"></div>
+        <div id="tablaPeleas" class="tabla"></div>
+  </main>
+  
+  <footer style="background-color: aquamarine; border-radius: 1rem;">
+    <div style="border-radius: 1rem; text-align: center; padding: 1rem;"><p>Hecho por Luca Simonazzi</p></div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi página web</title>
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    .contenido {
+      display: flex;
+    }
+
+    .nocauts {
+      width: 20%;
+      background-color: black;
+      padding: 1rem;
+      color: white;
+    }
+
+    .nocauts ol {
+      padding-left: 2rem;
+    }
+
+    .nocauts li {
+      margin-bottom: 2rem;
+      list-style: decimal;
+      cursor: pointer;
+    }
+
+    .videos {
+      width: 80%;
+      padding: 2rem;
+    }
+  </style>
+  <script>
+    function cambiarVideo(url, titulo, descripcion) {
+      const iframe = document.getElementById("video-nocaut");
+      const tituloElem = document.getElementById("titulo-nocaut");
+      const descElem = document.getElementById("descripcion-nocaut");
+
+      // Convertimos la URL normal a URL embed si es necesario
+      let embedUrl = url;
+      if (url.includes("youtube.com/watch")) {
+        const videoId = url.split("v=")[1].split("&")[0];
+        embedUrl = "https://www.youtube.com/embed/" + videoId;
+      } else if (url.includes("youtu.be/")) {
+        const videoId = url.split("youtu.be/")[1].split("?")[0];
+        embedUrl = "https://www.youtube.com/embed/" + videoId;
+      }
+
+      iframe.src = embedUrl;
+      tituloElem.textContent = titulo;
+      descElem.textContent = descripcion;
+    }
+  </script>
+</head>
+<body style="margin: 0" class="ft-arial-20-bold">
+  <header class="header"> 
+    <div class="header-paginas">
+      <nav class="header-nav">
+        <ul class="header-menu">
+          <li class="header-menu-item"><a href="index.html">Home</a></li>
+          <li class="header-menu-item"><a href="tabla.html">Tabla</a></li>
+          <li class="header-menu-item"><a href="pregunta1.html">Questionario</a></li>
+          <li class="header-menu-item"><a href="playlist.html">Playlist</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenido">
+    <div class="nocauts">
+      <h3>Mis nocauts</h3>
+      <ol>
+        <li onclick="cambiarVideo('https://youtu.be/eXwS7LeyuGc', 'Aldo', 'El nocaut de Aldo fue un momento épico en la UFC, donde McGregor mostró su poder y precisión.')">Aldo</li>
+        <li onclick="cambiarVideo('https://www.youtube.com/watch?v=DLpTx00PSgo', 'Alvarez', 'Con Eddie Alvarez, McGregor consiguió otro histórico KO para coronarse campeón ligero.')">Alvarez</li>
+        <li onclick="cambiarVideo('https://www.youtube.com/watch?v=xlYDpJSITSk', 'Poirier', 'Una pelea intensa, con un final explosivo.')">Poirier</li>
+        <li onclick="cambiarVideo('https://www.youtube.com/watch?v=w5pT92NRWhI', 'Cerrone', 'El KO más rápido de McGregor en peso welter, en tan solo 40 segundos.')">Cerrone</li>
+        <li onclick="cambiarVideo('https://www.youtube.com/watch?v=J-dcm5sA4T0', 'Mendez', 'Contra Mendez, McGregor demostró que podía contra los wrestlers.')">Mendez</li>
+      </ol>
+    </div>
+
+    <div class="videos">
+      <h3 id="titulo-nocaut">Aldo</h3>
+      <iframe id="video-nocaut" width="100%" height="400" src="https://www.youtube.com/embed/eXwS7LeyuGc"></iframe>
+      <p id="descripcion-nocaut">El nocaut de Aldo fue un momento épico en la UFC, donde McGregor mostró su poder y precisión.</p>
+    </div>
+  </main>
+
+  <footer style="background-color: aquamarine; border-radius: 1rem;">
+    <div style="border-radius: 1rem; text-align: center; padding: 1rem;"><p>Hecho por Luca Simonazzi</p></div>
+  </footer>
+</body>
+</html>

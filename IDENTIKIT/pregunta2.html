@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi página web</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./utils.js"></script>
+  <script>
+    function correctPageRedirect() {
+        window.location.href = "./respuesta2-correcta.html";
+    }
+
+    function incorrectPageRedirect() {
+        window.location.href = "./respuesta-incorrecta.html";
+    }
+  </script>
+</head>
+
+<body style="margin: 0" class="ft-arial-20-bold">
+  <main>
+    <div style="display: flex; align-items: center; gap: 15rem; margin-left: 30rem;">
+        <img src="./public/images/proper.webp" width="10%" onclick="correctPageRedirect()" style="cursor: pointer;"/>
+        <img src="./public/images/blue-label.webp" width="40%" onclick="incorrectPageRedirect()"style="cursor: pointer;"/>
+    </div>
+    <h2 style="text-align: center; margin-top: 15rem; font-size: 2rem;">¿Cual es mi whisky?</h2>
+    </main>
+</body>
+</html>

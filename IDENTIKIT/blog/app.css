@@ -1,0 +1,16 @@
+.icono {
+    margin-left: 5rem;
+}
+
+.boton-menu {
+    color: white!important;
+   
+}
+
+/* App.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
