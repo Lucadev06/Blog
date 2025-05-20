@@ -8,7 +8,7 @@ import { useState } from "react";
 import SportsMmaIcon from '@mui/icons-material/SportsMma';
 
 export const Header = () => {
-  const isMobile = useMediaQuery("(max-width:760px)", { noSsr: true });
+  const isMobile = useMediaQuery("(max-width:840px)", { noSsr: true });
 
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
@@ -66,11 +66,11 @@ export const Header = () => {
                 marginTop: "0.5rem",
               }}
             >
-              <SportsMmaIcon sx={{ color: 'white', fontSize: '2.5rem', marginLeft: '2rem' }} />
+              <SportsMmaIcon sx={{ color: 'red', fontSize: '2.5rem', marginLeft: '2rem' }} />
 
               <IconButton
                 sx={{
-                  marginLeft: "1%",
+                  marginLeft: "30%",
                 }}
               >
                 <CloseIcon

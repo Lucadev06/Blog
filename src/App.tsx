@@ -33,7 +33,7 @@ function App() {
         }}
       >
         <img
-          src="./public/imagen-animada.png"
+          src="/imagen-animada.png"
           alt="Logo"
           style={{
             width: '60%',
@@ -64,22 +64,25 @@ function App() {
           maxWidth: '20rem',
         }}
       >
-        <Button variant="contained" fullWidth color="primary" component="a"
-          href="/IDENTIKIT/index.html"
-          target="_blank"
-          rel="noopener noreferrer">
-          IDENTIKIT
-        </Button>
-        <Button
-          variant="contained"
-          color="secondary"
-          component="a"
-          href="/IDENTIKIT/blog/blog.html"
-          target="_blank"
-          fullWidth
-        >
-          BLOG
-        </Button>
+       <a
+  href="IDENTIKIT/index.html"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ textDecoration: 'none', width: '100%' }}
+>
+  <Button variant="contained" fullWidth color="primary">
+    IDENTIKIT
+  </Button>
+</a>
+
+    <a href="/blog" style={{ textDecoration: 'none', width: '100%' }}>
+  <Button variant="contained" fullWidth color="secondary">
+    BLOG
+  </Button>
+</a>
+
+
+
 
         <Button variant="contained" fullWidth color="success">
           LINK 2
