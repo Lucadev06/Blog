@@ -1,0 +1,176 @@
+.header {
+    background-color: green; 
+    text-align: center;
+    padding: 2rem;
+}
+
+.contenedor-imagen-texto {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    gap: 1rem; /* Espacio entre la imagen y el texto */
+    padding: 2rem;
+    margin-left: 15rem;
+}
+
+.foto-principal {
+    width: 35%; /* Ajusta el tamaño de la imagen */
+    border-radius: 1rem;
+    margin-left: -8%;   
+}
+
+.texto {
+    text-align: left; /* Asegura que el texto quede alineado a la izquierda */
+}
+
+h1 {
+    margin-bottom: 4rem; /* Espacio entre el título y el párrafo */
+    font-size: 5rem;
+    color: white;
+}
+
+.texto-header{
+    font-size: 3rem;
+}
+
+.parrafo-header {
+    font-size: 200%;
+}
+
+.contenedor-logos {
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: aquamarine;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 28rem;
+    /* margin: 3rem; */
+    width: 40%;
+}
+
+.logo {
+    width: 8%;
+     border-radius: 2rem;
+     margin: 1%;
+     padding: 1%; 
+}
+
+.header-menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-left: 0;
+    font-size: 2rem;
+	/*width: 100%;*/
+	width: 100%;
+	list-style-type: none;
+}
+
+
+.header-menu-item {
+	border-radius: 2rem;
+    padding: 0.5rem 1rem;
+	/*padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 1%;
+	padding-right: 1%;	*/
+	color: floralwhite;
+	/*color: var(--gama-colores-c05, floral
+    white);*/
+}
+
+a {
+    text-decoration: none; /* Quita la línea debajo */
+    color: inherit; /* Hereda el color del texto del elemento padre */
+}
+
+.contenedor-tabla {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+
+.tabla-peleas {
+    margin: 1rem auto;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f0f0f0;
+    border-radius: 1rem;
+    display: block;
+    overflow: auto;
+}
+
+.tabla-peleas td {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.cabecera-tabla {
+    background-color: #32CD32;
+    color: white;
+    padding: 0.8rem;
+    border: 0.1rem solid #ccc;
+    text-align: center;
+}
+
+.tabla {
+    display: flex;
+}
+
+.fila-victorias {
+    background-color: #32CD32;
+}
+
+.fila-derrotas {
+    background-color: red;
+}
+
+.titulo-tabla {
+    text-align: center;
+}
+
+.boton-siguiente {
+    margin-left: 5rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    background-color: chartreuse;
+    width: 15%;
+}
+
+.boton-volver {
+    margin-left: 5rem;
+    height: 6rem;
+    border-radius: 0.5rem;
+    background-color: violet;
+    width: 15%;
+}
+
+.ft-arial-20-bold {
+    font-family: arial, helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 2.5vw;
+    font-style: normal;
+}
+
+.boton-link {
+  background-color: #25d366; /* Verde tipo WhatsApp */
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 45%;
+}
+
+.boton-link:hover {
+  background-color: #1da851; /* Verde más oscuro al pasar el mouse */
+}
+
+.body-linktree {
+    background-image: url("./public/images/fondo-linktree.png");
+}
+
+
