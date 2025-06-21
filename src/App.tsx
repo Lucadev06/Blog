@@ -64,29 +64,32 @@ function App() {
           maxWidth: '20rem',
         }}
       >
-       <a
-  href="IDENTIKIT/index.html"
-  target="_blank"
-  rel="noopener noreferrer"
-  style={{ textDecoration: 'none', width: '100%' }}
->
-  <Button variant="contained" fullWidth color="primary">
-    IDENTIKIT
-  </Button>
-</a>
+        <a
+          href="IDENTIKIT/index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: 'none', width: '100%' }}
+        >
+          <Button variant="contained" fullWidth color="primary">
+            IDENTIKIT
+          </Button>
+        </a>
 
-    <a href="/blog" style={{ textDecoration: 'none', width: '100%' }}>
-  <Button variant="contained" fullWidth color="secondary">
-    BLOG
-  </Button>
-</a>
+        <a href="/blog" style={{ textDecoration: 'none', width: '100%' }}>
+          <Button variant="contained" fullWidth color="secondary">
+            BLOG
+          </Button>
+        </a>
 
-
-
-
-        <Button variant="contained" fullWidth color="success">
-          LINK 2
+        <Button
+          variant="contained"
+          fullWidth
+          color="success"
+          onClick={() => window.open('https://lucasimonazzi.netlify.app', '_blank')}
+        >
+          PORTFOLIO
         </Button>
+
       </Box>
     </Box>
   )

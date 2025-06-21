@@ -13,4 +13,8 @@ body, html {
     padding: 0;
     box-sizing: border-box;
   }
-  
+  .logo:hover {
+    transition: transform .3s ease; 
+    transform: rotate(360deg);
+    filter: saturate(3);
+}
